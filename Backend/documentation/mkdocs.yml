@@ -1,0 +1,28 @@
+site_name: ETNA-Access
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: darkblue
+      accent: blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Passer en mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: darkorange
+      accent: blue
+      toggle:
+        icon: material/lightbulb
+        name: Passer en mode clair
+
+plugins:
+  - swagger-ui-tag
+  - search
+  - mermaid2:
+      version: 11.1.0
+  
+
+

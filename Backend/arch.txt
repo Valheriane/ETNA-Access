@@ -1,0 +1,41 @@
+Backend/
+│
+├── app.py              # Contient l'initialisation de l'application
+├── resources 
+│   ├── accessRightRessource.py
+│   ├── addressRessource.py
+│   ├── companyRessource.py
+│   ├── fonctionCompanyRessource.py
+│   ├── imageRessource.py
+│   ├── licenceModeRessource.py
+│   ├── licenceRessource.py
+│   ├── loginHistoryRessource.py
+│   ├── logUserActionRessource.py
+│   ├── oAuthProviderRessource.py
+│   ├── offerProductRessource.py
+│   ├── offerRessource.py
+│   ├── offerTypeRessource.py
+│   ├── paymentRessource.py
+│   ├── permissionRessource.py
+│   ├── productConfigurationRessource.py
+│   ├── productImageRessource.py
+│   ├── typeImgRessource.py
+│   ├── userOAuthRessource.py
+│   ├── userRessource.py
+│   └── userSessionRessource.py 
+│
+├── config.py 
+├── env 
+├── instance
+│   └── test4.db  
+│
+├── decorators.py  
+├── populate_db.py  
+├── generate_schema.py 
+├── run.py
+├── arch.txt  
+├── main.py             # Contient les routes et le point d'entrée
+├── models.py           # (par exemple, pour les modèles SQLAlchemy)
+├── schemas.py          # (par exemple, pour les schémas Marshmallow)
+├── requirements.txt    # Liste des dépendances
+└── app.env             # Fichier des variables d'environnement
