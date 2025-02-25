@@ -14,6 +14,6 @@ faker
 Flask-Migrate
 mkdocs
 mkdocs-material
-mkdocs-swagger-ui
+mkdocs-swagger-ui-tag
 mkdocs-mermaid2-plugin
 

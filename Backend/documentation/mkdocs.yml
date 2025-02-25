@@ -12,7 +12,7 @@ theme:
         name: Passer en mode sombre
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: darkorange
+      primary: orange
       accent: blue
       toggle:
         icon: material/lightbulb
@@ -24,5 +24,32 @@ plugins:
   - mermaid2:
       version: 11.1.0
   
+
+nav:
+  - Home: index.md
+  -
+  - Installation:
+      - Overview: installation/index.md
+  - Guide de Développement:
+      - Overview: dev-guide/index.md
+      - API: dev-guide/api.md
+      - Roles et Permissions: dev-guide/role_permissions.md
+  - Authentification:
+      - Overview: authentification/index.md
+      - OAuth: authentification/oauth.md
+      - Security: authentification/security.md
+  - Tests:
+      - Overview: tests/index.md
+      - CI/CD: tests/ci_cd.md
+  - Deployment:
+      - Overview: deployment/index.md
+      - Docker: deployment/docker.md
+      - Security: deployment/security.md
+  - Maintenance:
+      - Overview: maintenance/index.md
+      - Scalabilité: maintenance/scalability.md
+  - References:
+      - Overview: references/index.md
+      - Liens Externes: references/liens_ext.md
 
 
