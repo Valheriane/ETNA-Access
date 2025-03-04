@@ -4,6 +4,7 @@ from faker import Faker
 from flask import Flask, request, jsonify
 from urllib import request
 from flask_bcrypt import Bcrypt
+from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import os
@@ -24,6 +25,8 @@ load_dotenv(dotenv_path='app.env')
 
 # Créer une instance de l'application
 app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})
+
 
 # Configuration de la base de données
 db_path = os.path.join(app.instance_path, 'my_database.db')

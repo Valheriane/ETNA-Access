@@ -25,10 +25,22 @@ from ressources.userSessionRessource import UserSessionListResource, UserSession
 from app import app  # Importer l'application depuis app.py
 from flask import render_template, request, jsonify
 #from flask_restful import Api
-from flask_restx import Api
+from flask_restx import Api, Resource
 from models import Users, db  # Assurez-vous que vos modèles sont importés correctement
 from werkzeug.security import check_password_hash
 from flask_jwt_extended import JWTManager, create_access_token
+
+# Gestion des OPTIONS pour CORS
+'''
+@app.route('/handle_options', methods=['OPTIONS'])
+def handle_options():
+    response = jsonify()
+    response.headers.add('Access-Control-Allow-Origin', 'http://localhost:8000')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization,Access-Control-Allow-Origin')
+    response.headers.add('Access-Control-Allow-Methods', 'POST, OPTIONS, GET, PUT, DELETE, PATCH')
+    return response
+'''
+
 
 
 api = Api(app, doc='/docs', title='My API', version='1.0', description='Documentation de l\'API')
@@ -106,6 +118,11 @@ def home():
 @app.route('/check-jwt', methods=['GET'])
 def check_jwt():
     return jsonify({"JWT_SECRET_KEY": app.config['JWT_SECRET_KEY']})
+
+@api.route('/test')
+class TestResource(Resource):  # Ajoutez l'héritage de Resource
+    def get(self):
+        return {'message': 'Hello, world!'}
 
 
 #Class ressource simple

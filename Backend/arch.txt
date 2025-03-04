@@ -1,7 +1,39 @@
 Backend/
 │
 ├── app.py              # Contient l'initialisation de l'application
-├── resources 
+├── documentation/ 
+│   ├── docs/
+│   │   ├── auth/
+│   │   │   ├── index.md
+│   │   │   ├── oauth.md
+│   │   │   └── security.md
+│   │   ├── deployment/
+│   │   │   ├── index.md
+│   │   │   ├── docker.md
+│   │   │   └── security.md
+│   │   ├── dev-guide/
+│   │   │   ├── index.md
+│   │   │   ├── arborecences.md
+│   │   │   ├── api.md
+│   │   │   ├── role_permission.md
+│   │   │   └── technologie.md
+│   │   ├── git/
+│   │   │   └── index.md
+│   │   ├── instalation/
+│   │   │   └── index.md
+│   │   ├── maintenance/
+│   │   │   ├── index.md
+│   │   │   └── scallability.md
+│   │   ├── references/
+│   │   │   ├── index.md
+│   │   │   └── liens_ext.md
+│   │   ├── tests/
+│   │   │   ├── ci/cd.md
+│   │   │   └── index.md
+│   │   └── index.md
+│   └── mkdocs.yml 
+│
+├── resources/
 │   ├── accessRightRessource.py
 │   ├── addressRessource.py
 │   ├── companyRessource.py
@@ -25,8 +57,8 @@ Backend/
 │   └── userSessionRessource.py 
 │
 ├── config.py 
-├── env 
-├── instance
+├── env/
+├── instance/
 │   └── test4.db  
 │
 ├── decorators.py  
@@ -39,3 +71,4 @@ Backend/
 ├── schemas.py          # (par exemple, pour les schémas Marshmallow)
 ├── requirements.txt    # Liste des dépendances
 └── app.env             # Fichier des variables d'environnement
+

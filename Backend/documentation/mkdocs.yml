@@ -27,17 +27,20 @@ plugins:
 
 nav:
   - Home: index.md
-  -
   - Installation:
-      - Overview: installation/index.md
+      - Démarage rapide: installation/index.md
+  - GitHub:
+      - Overview: git/index.md
   - Guide de Développement:
       - Overview: dev-guide/index.md
+      - Technologies: dev-guide/technologie.md
+      - Arboressence: dev-guide/arboressence.md
       - API: dev-guide/api.md
       - Roles et Permissions: dev-guide/role_permissions.md
   - Authentification:
-      - Overview: authentification/index.md
-      - OAuth: authentification/oauth.md
-      - Security: authentification/security.md
+      - Overview: auth/index.md
+      - OAuth: auth/oauth.md
+      - Security: auth/security.md
   - Tests:
       - Overview: tests/index.md
       - CI/CD: tests/ci_cd.md
