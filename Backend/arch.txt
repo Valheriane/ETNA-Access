@@ -1,0 +1,74 @@
+Backend/
+│
+├── app.py              # Contient l'initialisation de l'application
+├── documentation/ 
+│   ├── docs/
+│   │   ├── auth/
+│   │   │   ├── index.md
+│   │   │   ├── oauth.md
+│   │   │   └── security.md
+│   │   ├── deployment/
+│   │   │   ├── index.md
+│   │   │   ├── docker.md
+│   │   │   └── security.md
+│   │   ├── dev-guide/
+│   │   │   ├── index.md
+│   │   │   ├── arborecences.md
+│   │   │   ├── api.md
+│   │   │   ├── role_permission.md
+│   │   │   └── technologie.md
+│   │   ├── git/
+│   │   │   └── index.md
+│   │   ├── instalation/
+│   │   │   └── index.md
+│   │   ├── maintenance/
+│   │   │   ├── index.md
+│   │   │   └── scallability.md
+│   │   ├── references/
+│   │   │   ├── index.md
+│   │   │   └── liens_ext.md
+│   │   ├── tests/
+│   │   │   ├── ci/cd.md
+│   │   │   └── index.md
+│   │   └── index.md
+│   └── mkdocs.yml 
+│
+├── resources/
+│   ├── accessRightRessource.py
+│   ├── addressRessource.py
+│   ├── companyRessource.py
+│   ├── fonctionCompanyRessource.py
+│   ├── imageRessource.py
+│   ├── licenceModeRessource.py
+│   ├── licenceRessource.py
+│   ├── loginHistoryRessource.py
+│   ├── logUserActionRessource.py
+│   ├── oAuthProviderRessource.py
+│   ├── offerProductRessource.py
+│   ├── offerRessource.py
+│   ├── offerTypeRessource.py
+│   ├── paymentRessource.py
+│   ├── permissionRessource.py
+│   ├── productConfigurationRessource.py
+│   ├── productImageRessource.py
+│   ├── typeImgRessource.py
+│   ├── userOAuthRessource.py
+│   ├── userRessource.py
+│   └── userSessionRessource.py 
+│
+├── config.py 
+├── env/
+├── instance/
+│   └── test4.db  
+│
+├── decorators.py  
+├── populate_db.py  
+├── generate_schema.py 
+├── run.py
+├── arch.txt  
+├── main.py             # Contient les routes et le point d'entrée
+├── models.py           # (par exemple, pour les modèles SQLAlchemy)
+├── schemas.py          # (par exemple, pour les schémas Marshmallow)
+├── requirements.txt    # Liste des dépendances
+└── app.env             # Fichier des variables d'environnement
+

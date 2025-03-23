@@ -1,0 +1,3657 @@
+{
+    "swagger": "2.0",
+    "basePath": "/",
+    "paths": {
+        "/access_rights": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un droit d'acc\u00e8s existant",
+                "operationId": "put_access_rights_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un droit d'acc\u00e8s",
+                "operationId": "patch_access_rights_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau droit d'acc\u00e8s",
+                "operationId": "post_access_rights_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un droit d'acc\u00e8s, sauf s'il est utilis\u00e9 dans des licences",
+                "operationId": "delete_access_rights_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un droit d'acc\u00e8s sp\u00e9cifique ou tous les droits d'acc\u00e8s",
+                "operationId": "get_access_rights_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/access_rights/{access_right_id}": {
+            "parameters": [
+                {
+                    "name": "access_right_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un droit d'acc\u00e8s existant",
+                "operationId": "put_access_rights_resource",
+                "tags": [
+                    "access_rights"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un droit d'acc\u00e8s",
+                "operationId": "patch_access_rights_resource",
+                "tags": [
+                    "access_rights"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau droit d'acc\u00e8s",
+                "operationId": "post_access_rights_resource",
+                "tags": [
+                    "access_rights"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un droit d'acc\u00e8s, sauf s'il est utilis\u00e9 dans des licences",
+                "operationId": "delete_access_rights_resource",
+                "tags": [
+                    "access_rights"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un droit d'acc\u00e8s sp\u00e9cifique ou tous les droits d'acc\u00e8s",
+                "operationId": "get_access_rights_resource",
+                "tags": [
+                    "access_rights"
+                ]
+            }
+        },
+        "/addresses": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Modifie une adresse existante avec des r\u00e8gles de permission strictes",
+                "operationId": "put_address_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Modifie une adresse existante avec des r\u00e8gles de permission strictes",
+                "operationId": "patch_address_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle adresse avec des r\u00e8gles adapt\u00e9es au r\u00f4le de l'utilisateur",
+                "operationId": "post_address_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une adresse en respectant les r\u00e8gles de permissions",
+                "operationId": "delete_address_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une adresse sp\u00e9cifique ou toutes les adresses avec des filtres optionnels",
+                "description": "V\u00e9rifie les permissions utilisateur avant de retourner les donn\u00e9es.",
+                "operationId": "get_address_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/addresses/{address_id}": {
+            "parameters": [
+                {
+                    "name": "address_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Modifie une adresse existante avec des r\u00e8gles de permission strictes",
+                "operationId": "put_address_resource",
+                "tags": [
+                    "addresses"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Modifie une adresse existante avec des r\u00e8gles de permission strictes",
+                "operationId": "patch_address_resource",
+                "tags": [
+                    "addresses"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle adresse avec des r\u00e8gles adapt\u00e9es au r\u00f4le de l'utilisateur",
+                "operationId": "post_address_resource",
+                "tags": [
+                    "addresses"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une adresse en respectant les r\u00e8gles de permissions",
+                "operationId": "delete_address_resource",
+                "tags": [
+                    "addresses"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une adresse sp\u00e9cifique ou toutes les adresses avec des filtres optionnels",
+                "description": "V\u00e9rifie les permissions utilisateur avant de retourner les donn\u00e9es.",
+                "operationId": "get_address_resource",
+                "tags": [
+                    "addresses"
+                ]
+            }
+        },
+        "/api/users/full": {
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "post_user_permission_full_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/companies": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une entreprise existante",
+                "operationId": "put_company_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une entreprise",
+                "operationId": "patch_company_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle entreprise",
+                "operationId": "post_company_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une entreprise apr\u00e8s v\u00e9rifications de s\u00e9curit\u00e9",
+                "operationId": "delete_company_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une entreprise sp\u00e9cifique ou toutes les entreprises avec filtre sur imgs_id",
+                "operationId": "get_company_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/companies/{company_id}": {
+            "parameters": [
+                {
+                    "name": "company_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une entreprise existante",
+                "operationId": "put_company_resource",
+                "tags": [
+                    "companies"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une entreprise",
+                "operationId": "patch_company_resource",
+                "tags": [
+                    "companies"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle entreprise",
+                "operationId": "post_company_resource",
+                "tags": [
+                    "companies"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une entreprise apr\u00e8s v\u00e9rifications de s\u00e9curit\u00e9",
+                "operationId": "delete_company_resource",
+                "tags": [
+                    "companies"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une entreprise sp\u00e9cifique ou toutes les entreprises avec filtre sur imgs_id",
+                "operationId": "get_company_resource",
+                "tags": [
+                    "companies"
+                ]
+            }
+        },
+        "/company_functions/{fonction_id}": {
+            "parameters": [
+                {
+                    "name": "fonction_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une fonction existante",
+                "operationId": "put_fonction_company_resource",
+                "tags": [
+                    "company_functions"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une fonction existante",
+                "operationId": "patch_fonction_company_resource",
+                "tags": [
+                    "company_functions"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle fonction dans une entreprise",
+                "operationId": "post_fonction_company_resource",
+                "tags": [
+                    "company_functions"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une fonction d'une entreprise",
+                "operationId": "delete_fonction_company_resource",
+                "tags": [
+                    "company_functions"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une fonction sp\u00e9cifique ou toutes les fonctions avec des filtres facultatifs",
+                "operationId": "get_fonction_company_resource",
+                "tags": [
+                    "company_functions"
+                ]
+            }
+        },
+        "/fonctions": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une fonction existante",
+                "operationId": "put_fonction_company_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une fonction existante",
+                "operationId": "patch_fonction_company_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle fonction dans une entreprise",
+                "operationId": "post_fonction_company_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une fonction d'une entreprise",
+                "operationId": "delete_fonction_company_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une fonction sp\u00e9cifique ou toutes les fonctions avec des filtres facultatifs",
+                "operationId": "get_fonction_company_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/fonctions/{fonction_id}": {
+            "parameters": [
+                {
+                    "name": "fonction_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une fonction existante",
+                "operationId": "put_fonction_company_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une fonction existante",
+                "operationId": "patch_fonction_company_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle fonction dans une entreprise",
+                "operationId": "post_fonction_company_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une fonction d'une entreprise",
+                "operationId": "delete_fonction_company_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une fonction sp\u00e9cifique ou toutes les fonctions avec des filtres facultatifs",
+                "operationId": "get_fonction_company_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/image_types/{type_img_id}": {
+            "parameters": [
+                {
+                    "name": "type_img_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un type d'image existant",
+                "operationId": "put_type_imgs_resource",
+                "tags": [
+                    "image_types"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un type d'image",
+                "operationId": "patch_type_imgs_resource",
+                "tags": [
+                    "image_types"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau type d'image",
+                "operationId": "post_type_imgs_resource",
+                "tags": [
+                    "image_types"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un type d'image",
+                "operationId": "delete_type_imgs_resource",
+                "tags": [
+                    "image_types"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un type d'image sp\u00e9cifique ou tous les types d'images",
+                "operationId": "get_type_imgs_resource",
+                "tags": [
+                    "image_types"
+                ]
+            }
+        },
+        "/images": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une image existante",
+                "operationId": "put_image_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une image",
+                "operationId": "patch_image_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle image",
+                "operationId": "post_image_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une image apr\u00e8s v\u00e9rification qu'elle n'est pas utilis\u00e9e",
+                "operationId": "delete_image_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une image sp\u00e9cifique ou toutes les images",
+                "operationId": "get_image_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/images/{image_id}": {
+            "parameters": [
+                {
+                    "name": "image_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une image existante",
+                "operationId": "put_image_resource",
+                "tags": [
+                    "images"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une image",
+                "operationId": "patch_image_resource",
+                "tags": [
+                    "images"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle image",
+                "operationId": "post_image_resource",
+                "tags": [
+                    "images"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une image apr\u00e8s v\u00e9rification qu'elle n'est pas utilis\u00e9e",
+                "operationId": "delete_image_resource",
+                "tags": [
+                    "images"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une image sp\u00e9cifique ou toutes les images",
+                "operationId": "get_image_resource",
+                "tags": [
+                    "images"
+                ]
+            }
+        },
+        "/licence_modes/{license_mode_id}": {
+            "parameters": [
+                {
+                    "name": "license_mode_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un mode de licence existant",
+                "operationId": "put_license_mode_resource",
+                "tags": [
+                    "licence_modes"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un mode de licence",
+                "operationId": "patch_license_mode_resource",
+                "tags": [
+                    "licence_modes"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau mode de licence",
+                "operationId": "post_license_mode_resource",
+                "tags": [
+                    "licence_modes"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un mode de licence, sauf s'il est utilis\u00e9 dans des licences",
+                "operationId": "delete_license_mode_resource",
+                "tags": [
+                    "licence_modes"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un mode de licence sp\u00e9cifique ou tous les modes de licence",
+                "operationId": "get_license_mode_resource",
+                "tags": [
+                    "licence_modes"
+                ]
+            }
+        },
+        "/licences/{license_id}": {
+            "parameters": [
+                {
+                    "name": "license_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une licence existante",
+                "operationId": "put_license_resource",
+                "tags": [
+                    "licences"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une licence",
+                "operationId": "patch_license_resource",
+                "tags": [
+                    "licences"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle licence",
+                "operationId": "post_license_resource",
+                "tags": [
+                    "licences"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une licence",
+                "operationId": "delete_license_resource",
+                "tags": [
+                    "licences"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une licence sp\u00e9cifique ou toutes les licences avec des filtres",
+                "operationId": "get_license_resource",
+                "tags": [
+                    "licences"
+                ]
+            }
+        },
+        "/license_modes": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un mode de licence existant",
+                "operationId": "put_license_mode_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un mode de licence",
+                "operationId": "patch_license_mode_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau mode de licence",
+                "operationId": "post_license_mode_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un mode de licence, sauf s'il est utilis\u00e9 dans des licences",
+                "operationId": "delete_license_mode_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un mode de licence sp\u00e9cifique ou tous les modes de licence",
+                "operationId": "get_license_mode_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/license_modes/{license_mode_id}": {
+            "parameters": [
+                {
+                    "name": "license_mode_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un mode de licence existant",
+                "operationId": "put_license_mode_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un mode de licence",
+                "operationId": "patch_license_mode_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau mode de licence",
+                "operationId": "post_license_mode_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un mode de licence, sauf s'il est utilis\u00e9 dans des licences",
+                "operationId": "delete_license_mode_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un mode de licence sp\u00e9cifique ou tous les modes de licence",
+                "operationId": "get_license_mode_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/licenses": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une licence existante",
+                "operationId": "put_license_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une licence",
+                "operationId": "patch_license_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle licence",
+                "operationId": "post_license_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une licence",
+                "operationId": "delete_license_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une licence sp\u00e9cifique ou toutes les licences avec des filtres",
+                "operationId": "get_license_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/licenses/{license_id}": {
+            "parameters": [
+                {
+                    "name": "license_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une licence existante",
+                "operationId": "put_license_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une licence",
+                "operationId": "patch_license_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle licence",
+                "operationId": "post_license_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une licence",
+                "operationId": "delete_license_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une licence sp\u00e9cifique ou toutes les licences avec des filtres",
+                "operationId": "get_license_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/log_user_actions": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une action utilisateur sp\u00e9cifique ou toutes les actions, avec filtrage par user_id",
+                "operationId": "get_log_user_action_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une action utilisateur",
+                "operationId": "delete_log_user_action_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une action utilisateur existante",
+                "operationId": "put_log_user_action_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle action utilisateur",
+                "operationId": "post_log_user_action_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/log_user_actions/{log_user_action_id}": {
+            "parameters": [
+                {
+                    "name": "log_user_action_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une action utilisateur sp\u00e9cifique ou toutes les actions, avec filtrage par user_id",
+                "operationId": "get_log_user_action_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une action utilisateur",
+                "operationId": "delete_log_user_action_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une action utilisateur existante",
+                "operationId": "put_log_user_action_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle action utilisateur",
+                "operationId": "post_log_user_action_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/login_history": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un historique de connexion sp\u00e9cifique ou tous les historiques, avec un filtrage optionnel par user_id",
+                "operationId": "get_login_history_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un historique de connexion",
+                "operationId": "delete_login_history_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle entr\u00e9e d'historique de connexion",
+                "operationId": "post_login_history_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/login_history/{login_history_id}": {
+            "parameters": [
+                {
+                    "name": "login_history_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un historique de connexion sp\u00e9cifique ou tous les historiques, avec un filtrage optionnel par user_id",
+                "operationId": "get_login_history_resource",
+                "tags": [
+                    "login_history"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un historique de connexion",
+                "operationId": "delete_login_history_resource",
+                "tags": [
+                    "login_history"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle entr\u00e9e d'historique de connexion",
+                "operationId": "post_login_history_resource",
+                "tags": [
+                    "login_history"
+                ]
+            }
+        },
+        "/oauth_providers": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "GET: R\u00e9cup\u00e9rer un fournisseur OAuth sp\u00e9cifique ou la liste compl\u00e8te",
+                "operationId": "get_o_auth_provider_ressource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "DELETE: Supprimer un fournisseur OAuth",
+                "operationId": "delete_o_auth_provider_ressource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "PUT: Mettre \u00e0 jour un fournisseur OAuth existant",
+                "operationId": "put_o_auth_provider_ressource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "POST: Cr\u00e9er un nouveau fournisseur OAuth",
+                "operationId": "post_o_auth_provider_ressource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/oauth_providers/{oauth_provider_id}": {
+            "parameters": [
+                {
+                    "name": "oauth_provider_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "GET: R\u00e9cup\u00e9rer un fournisseur OAuth sp\u00e9cifique ou la liste compl\u00e8te",
+                "operationId": "get_o_auth_provider_ressource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "DELETE: Supprimer un fournisseur OAuth",
+                "operationId": "delete_o_auth_provider_ressource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "PUT: Mettre \u00e0 jour un fournisseur OAuth existant",
+                "operationId": "put_o_auth_provider_ressource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "POST: Cr\u00e9er un nouveau fournisseur OAuth",
+                "operationId": "post_o_auth_provider_ressource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/oauth_providers/{provider_id}": {
+            "parameters": [
+                {
+                    "name": "provider_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "GET: R\u00e9cup\u00e9rer un fournisseur OAuth sp\u00e9cifique ou la liste compl\u00e8te",
+                "operationId": "get_o_auth_provider_ressource",
+                "tags": [
+                    "oauth_providers"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "DELETE: Supprimer un fournisseur OAuth",
+                "operationId": "delete_o_auth_provider_ressource",
+                "tags": [
+                    "oauth_providers"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "PUT: Mettre \u00e0 jour un fournisseur OAuth existant",
+                "operationId": "put_o_auth_provider_ressource",
+                "tags": [
+                    "oauth_providers"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "POST: Cr\u00e9er un nouveau fournisseur OAuth",
+                "operationId": "post_o_auth_provider_ressource",
+                "tags": [
+                    "oauth_providers"
+                ]
+            }
+        },
+        "/offer-products": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une association produit-offre existante",
+                "operationId": "put_offer_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une association produit-offre",
+                "operationId": "patch_offer_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle association produit-offre",
+                "operationId": "post_offer_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une association produit-offre",
+                "operationId": "delete_offer_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une association produit-offre sp\u00e9cifique ou toutes les associations",
+                "operationId": "get_offer_product_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/offer-products/{offer_product_id}": {
+            "parameters": [
+                {
+                    "name": "offer_product_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une association produit-offre existante",
+                "operationId": "put_offer_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une association produit-offre",
+                "operationId": "patch_offer_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle association produit-offre",
+                "operationId": "post_offer_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une association produit-offre",
+                "operationId": "delete_offer_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une association produit-offre sp\u00e9cifique ou toutes les associations",
+                "operationId": "get_offer_product_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/offer_products/{offer_product_id}": {
+            "parameters": [
+                {
+                    "name": "offer_product_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une association produit-offre existante",
+                "operationId": "put_offer_product_resource",
+                "tags": [
+                    "offer_products"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une association produit-offre",
+                "operationId": "patch_offer_product_resource",
+                "tags": [
+                    "offer_products"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle association produit-offre",
+                "operationId": "post_offer_product_resource",
+                "tags": [
+                    "offer_products"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une association produit-offre",
+                "operationId": "delete_offer_product_resource",
+                "tags": [
+                    "offer_products"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une association produit-offre sp\u00e9cifique ou toutes les associations",
+                "operationId": "get_offer_product_resource",
+                "tags": [
+                    "offer_products"
+                ]
+            }
+        },
+        "/offer_types": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un type d'offre existant",
+                "operationId": "put_offer_type_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un type d'offre",
+                "operationId": "patch_offer_type_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau type d'offre",
+                "operationId": "post_offer_type_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un type d'offre",
+                "operationId": "delete_offer_type_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un type d'offre sp\u00e9cifique ou tous les types d'offres",
+                "operationId": "get_offer_type_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/offer_types/{offer_type_id}": {
+            "parameters": [
+                {
+                    "name": "offer_type_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un type d'offre existant",
+                "operationId": "put_offer_type_resource",
+                "tags": [
+                    "offer_types"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un type d'offre",
+                "operationId": "patch_offer_type_resource",
+                "tags": [
+                    "offer_types"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau type d'offre",
+                "operationId": "post_offer_type_resource",
+                "tags": [
+                    "offer_types"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un type d'offre",
+                "operationId": "delete_offer_type_resource",
+                "tags": [
+                    "offer_types"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un type d'offre sp\u00e9cifique ou tous les types d'offres",
+                "operationId": "get_offer_type_resource",
+                "tags": [
+                    "offer_types"
+                ]
+            }
+        },
+        "/offers": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une offre existante",
+                "operationId": "put_offer_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une offre",
+                "operationId": "patch_offer_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle offre",
+                "operationId": "post_offer_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une offre",
+                "operationId": "delete_offer_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une offre sp\u00e9cifique ou toutes les offres avec des filtres facultatifs",
+                "operationId": "get_offer_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/offers/{offer_id}": {
+            "parameters": [
+                {
+                    "name": "offer_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une offre existante",
+                "operationId": "put_offer_resource",
+                "tags": [
+                    "offers"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une offre",
+                "operationId": "patch_offer_resource",
+                "tags": [
+                    "offers"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle offre",
+                "operationId": "post_offer_resource",
+                "tags": [
+                    "offers"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une offre",
+                "operationId": "delete_offer_resource",
+                "tags": [
+                    "offers"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une offre sp\u00e9cifique ou toutes les offres avec des filtres facultatifs",
+                "operationId": "get_offer_resource",
+                "tags": [
+                    "offers"
+                ]
+            }
+        },
+        "/offers/{product_id}": {
+            "parameters": [
+                {
+                    "name": "product_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un produit existant",
+                "operationId": "put_product_resource",
+                "tags": [
+                    "offers"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un produit",
+                "operationId": "patch_product_resource",
+                "tags": [
+                    "offers"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau produit",
+                "operationId": "post_product_resource",
+                "tags": [
+                    "offers"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un produit",
+                "operationId": "delete_product_resource",
+                "tags": [
+                    "offers"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un produit sp\u00e9cifique ou tous les produits",
+                "operationId": "get_product_resource",
+                "tags": [
+                    "offers"
+                ]
+            }
+        },
+        "/payment_methods": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un moyen de paiement existant",
+                "operationId": "put_payment_method_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un moyen de paiement",
+                "operationId": "patch_payment_method_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau moyen de paiement",
+                "operationId": "post_payment_method_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un moyen de paiement",
+                "operationId": "delete_payment_method_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un moyen de paiement sp\u00e9cifique ou applique des filtres",
+                "operationId": "get_payment_method_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/payment_methods/{payment_method_id}": {
+            "parameters": [
+                {
+                    "name": "payment_method_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un moyen de paiement existant",
+                "operationId": "put_payment_method_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un moyen de paiement",
+                "operationId": "patch_payment_method_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau moyen de paiement",
+                "operationId": "post_payment_method_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un moyen de paiement",
+                "operationId": "delete_payment_method_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un moyen de paiement sp\u00e9cifique ou applique des filtres",
+                "operationId": "get_payment_method_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/payments/{payment_method_id}": {
+            "parameters": [
+                {
+                    "name": "payment_method_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un moyen de paiement existant",
+                "operationId": "put_payment_method_resource",
+                "tags": [
+                    "payments"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un moyen de paiement",
+                "operationId": "patch_payment_method_resource",
+                "tags": [
+                    "payments"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau moyen de paiement",
+                "operationId": "post_payment_method_resource",
+                "tags": [
+                    "payments"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un moyen de paiement",
+                "operationId": "delete_payment_method_resource",
+                "tags": [
+                    "payments"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un moyen de paiement sp\u00e9cifique ou applique des filtres",
+                "operationId": "get_payment_method_resource",
+                "tags": [
+                    "payments"
+                ]
+            }
+        },
+        "/permissions": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une permission existante",
+                "operationId": "put_permission_sso_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une permission",
+                "operationId": "patch_permission_sso_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle permission",
+                "operationId": "post_permission_sso_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une permission",
+                "operationId": "delete_permission_sso_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une permission sp\u00e9cifique ou toutes les permissions en fonction du niveau d'autorisation",
+                "operationId": "get_permission_sso_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/permissions/{permission_id}": {
+            "parameters": [
+                {
+                    "name": "permission_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une permission existante",
+                "operationId": "put_permission_sso_resource",
+                "tags": [
+                    "permissions"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une permission",
+                "operationId": "patch_permission_sso_resource",
+                "tags": [
+                    "permissions"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle permission",
+                "operationId": "post_permission_sso_resource",
+                "tags": [
+                    "permissions"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une permission",
+                "operationId": "delete_permission_sso_resource",
+                "tags": [
+                    "permissions"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une permission sp\u00e9cifique ou toutes les permissions en fonction du niveau d'autorisation",
+                "operationId": "get_permission_sso_resource",
+                "tags": [
+                    "permissions"
+                ]
+            }
+        },
+        "/product-configurations": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une configuration produit existante",
+                "operationId": "put_product_configuration_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une configuration produit",
+                "operationId": "patch_product_configuration_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle configuration produit",
+                "operationId": "post_product_configuration_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une configuration produit",
+                "operationId": "delete_product_configuration_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une configuration produit sp\u00e9cifique ou toutes les configurations",
+                "operationId": "get_product_configuration_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/product-configurations/{config_id}": {
+            "parameters": [
+                {
+                    "name": "config_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une configuration produit existante",
+                "operationId": "put_product_configuration_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une configuration produit",
+                "operationId": "patch_product_configuration_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle configuration produit",
+                "operationId": "post_product_configuration_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une configuration produit",
+                "operationId": "delete_product_configuration_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une configuration produit sp\u00e9cifique ou toutes les configurations",
+                "operationId": "get_product_configuration_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/product-images": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une association produit-image existante",
+                "operationId": "put_product_image_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une association produit-image",
+                "operationId": "patch_product_image_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle relation produit-image",
+                "operationId": "post_product_image_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une association produit-image",
+                "operationId": "delete_product_image_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une association produit-image sp\u00e9cifique ou toutes les associations",
+                "operationId": "get_product_image_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/product-images/{product_image_id}": {
+            "parameters": [
+                {
+                    "name": "product_image_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une association produit-image existante",
+                "operationId": "put_product_image_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une association produit-image",
+                "operationId": "patch_product_image_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle relation produit-image",
+                "operationId": "post_product_image_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une association produit-image",
+                "operationId": "delete_product_image_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une association produit-image sp\u00e9cifique ou toutes les associations",
+                "operationId": "get_product_image_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/product_configurations/{config_id}": {
+            "parameters": [
+                {
+                    "name": "config_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une configuration produit existante",
+                "operationId": "put_product_configuration_resource",
+                "tags": [
+                    "product_configurations"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une configuration produit",
+                "operationId": "patch_product_configuration_resource",
+                "tags": [
+                    "product_configurations"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle configuration produit",
+                "operationId": "post_product_configuration_resource",
+                "tags": [
+                    "product_configurations"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une configuration produit",
+                "operationId": "delete_product_configuration_resource",
+                "tags": [
+                    "product_configurations"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une configuration produit sp\u00e9cifique ou toutes les configurations",
+                "operationId": "get_product_configuration_resource",
+                "tags": [
+                    "product_configurations"
+                ]
+            }
+        },
+        "/product_images/{product_image_id}": {
+            "parameters": [
+                {
+                    "name": "product_image_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une association produit-image existante",
+                "operationId": "put_product_image_resource",
+                "tags": [
+                    "product_images"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement une association produit-image",
+                "operationId": "patch_product_image_resource",
+                "tags": [
+                    "product_images"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle relation produit-image",
+                "operationId": "post_product_image_resource",
+                "tags": [
+                    "product_images"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une association produit-image",
+                "operationId": "delete_product_image_resource",
+                "tags": [
+                    "product_images"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une association produit-image sp\u00e9cifique ou toutes les associations",
+                "operationId": "get_product_image_resource",
+                "tags": [
+                    "product_images"
+                ]
+            }
+        },
+        "/products": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un produit existant",
+                "operationId": "put_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un produit",
+                "operationId": "patch_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau produit",
+                "operationId": "post_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un produit",
+                "operationId": "delete_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un produit sp\u00e9cifique ou tous les produits",
+                "operationId": "get_product_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/products/{product_id}": {
+            "parameters": [
+                {
+                    "name": "product_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un produit existant",
+                "operationId": "put_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un produit",
+                "operationId": "patch_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau produit",
+                "operationId": "post_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un produit",
+                "operationId": "delete_product_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un produit sp\u00e9cifique ou tous les produits",
+                "operationId": "get_product_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/test": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get_test_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/type_imgs": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un type d'image existant",
+                "operationId": "put_type_imgs_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un type d'image",
+                "operationId": "patch_type_imgs_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau type d'image",
+                "operationId": "post_type_imgs_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un type d'image",
+                "operationId": "delete_type_imgs_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un type d'image sp\u00e9cifique ou tous les types d'images",
+                "operationId": "get_type_imgs_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/type_imgs/{type_img_id}": {
+            "parameters": [
+                {
+                    "name": "type_img_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement un type d'image existant",
+                "operationId": "put_type_imgs_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un type d'image",
+                "operationId": "patch_type_imgs_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouveau type d'image",
+                "operationId": "post_type_imgs_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un type d'image",
+                "operationId": "delete_type_imgs_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un type d'image sp\u00e9cifique ou tous les types d'images",
+                "operationId": "get_type_imgs_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/user_actions/{log_user_action_id}": {
+            "parameters": [
+                {
+                    "name": "log_user_action_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re une action utilisateur sp\u00e9cifique ou toutes les actions, avec filtrage par user_id",
+                "operationId": "get_log_user_action_resource",
+                "tags": [
+                    "user_actions"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime une action utilisateur",
+                "operationId": "delete_log_user_action_resource",
+                "tags": [
+                    "user_actions"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Remplace compl\u00e8tement une action utilisateur existante",
+                "operationId": "put_log_user_action_resource",
+                "tags": [
+                    "user_actions"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e une nouvelle action utilisateur",
+                "operationId": "post_log_user_action_resource",
+                "tags": [
+                    "user_actions"
+                ]
+            }
+        },
+        "/user_oauth/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re toutes les connexions OAuth de l'utilisateur ou toutes si admin",
+                "operationId": "get_user_o_auth_list_resource",
+                "tags": [
+                    "user_oauth"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Associer un compte OAuth \u00e0 l'utilisateur courant",
+                "operationId": "post_user_o_auth_list_resource",
+                "tags": [
+                    "user_oauth"
+                ]
+            }
+        },
+        "/user_oauth/{user_oauth_id}": {
+            "parameters": [
+                {
+                    "name": "user_oauth_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e9rer une connexion OAuth sp\u00e9cifique",
+                "operationId": "get_user_o_auth_resource",
+                "tags": [
+                    "user_oauth"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Dissocier un compte OAuth",
+                "operationId": "delete_user_o_auth_resource",
+                "tags": [
+                    "user_oauth"
+                ]
+            }
+        },
+        "/user_oauths": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re toutes les connexions OAuth de l'utilisateur ou toutes si admin",
+                "operationId": "get_user_o_auth_list_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Associer un compte OAuth \u00e0 l'utilisateur courant",
+                "operationId": "post_user_o_auth_list_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/user_oauths/{user_oauth_id}": {
+            "parameters": [
+                {
+                    "name": "user_oauth_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e9rer une connexion OAuth sp\u00e9cifique",
+                "operationId": "get_user_o_auth_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Dissocier un compte OAuth",
+                "operationId": "delete_user_o_auth_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/user_sessions": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re toutes les sessions de l'utilisateur ou toutes si admin",
+                "operationId": "get_user_session_list_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9er une nouvelle session utilisateur",
+                "operationId": "post_user_session_list_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/user_sessions/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re toutes les sessions de l'utilisateur ou toutes si admin",
+                "operationId": "get_user_session_list_resource",
+                "tags": [
+                    "user_sessions"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9er une nouvelle session utilisateur",
+                "operationId": "post_user_session_list_resource",
+                "tags": [
+                    "user_sessions"
+                ]
+            }
+        },
+        "/user_sessions/{user_session_id}": {
+            "parameters": [
+                {
+                    "name": "user_session_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e9rer une session utilisateur sp\u00e9cifique",
+                "operationId": "get_user_session_resource",
+                "tags": [
+                    "user_sessions"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprimer une session utilisateur",
+                "operationId": "delete_user_session_resource",
+                "tags": [
+                    "user_sessions"
+                ]
+            },
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour une session utilisateur existante",
+                "operationId": "put_user_session_resource",
+                "tags": [
+                    "user_sessions"
+                ]
+            }
+        },
+        "/users": {
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour un utilisateur existant en fonction des permissions",
+                "operationId": "put_user_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un utilisateur",
+                "operationId": "patch_user_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouvel utilisateur",
+                "operationId": "post_user_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un utilisateur apr\u00e8s v\u00e9rification des permissions",
+                "operationId": "delete_user_resource",
+                "tags": [
+                    "default"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un utilisateur sp\u00e9cifique ou tous les utilisateurs avec un filtre bas\u00e9 sur les permissions",
+                "description": ":param user_id: Identifiant de l'utilisateur (facultatif).\n:return: Les donn\u00e9es de l'utilisateur ou des utilisateurs filtr\u00e9s, avec un code HTTP appropri\u00e9.",
+                "operationId": "get_user_resource",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+        "/users/{user_id}": {
+            "parameters": [
+                {
+                    "name": "user_id",
+                    "in": "path",
+                    "required": true,
+                    "type": "integer"
+                }
+            ],
+            "put": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour un utilisateur existant en fonction des permissions",
+                "operationId": "put_user_resource",
+                "tags": [
+                    "users"
+                ]
+            },
+            "patch": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Met \u00e0 jour partiellement un utilisateur",
+                "operationId": "patch_user_resource",
+                "tags": [
+                    "users"
+                ]
+            },
+            "post": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Cr\u00e9e un nouvel utilisateur",
+                "operationId": "post_user_resource",
+                "tags": [
+                    "users"
+                ]
+            },
+            "delete": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "Supprime un utilisateur apr\u00e8s v\u00e9rification des permissions",
+                "operationId": "delete_user_resource",
+                "tags": [
+                    "users"
+                ]
+            },
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "summary": "R\u00e9cup\u00e8re un utilisateur sp\u00e9cifique ou tous les utilisateurs avec un filtre bas\u00e9 sur les permissions",
+                "description": ":param user_id: Identifiant de l'utilisateur (facultatif).\n:return: Les donn\u00e9es de l'utilisateur ou des utilisateurs filtr\u00e9s, avec un code HTTP appropri\u00e9.",
+                "operationId": "get_user_resource",
+                "tags": [
+                    "users"
+                ]
+            }
+        }
+    },
+    "info": {
+        "title": "My API",
+        "version": "1.0",
+        "description": "Documentation de l'API"
+    },
+    "produces": [
+        "application/json"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "tags": [
+        {
+            "name": "default",
+            "description": "Default namespace"
+        },
+        {
+            "name": "users",
+            "description": "Operations related to users"
+        },
+        {
+            "name": "companies",
+            "description": "Operations related to companies"
+        },
+        {
+            "name": "payments",
+            "description": "Payment operations and processing"
+        },
+        {
+            "name": "oauth_providers",
+            "description": "OAuth provider management (Google, Facebook, etc.)"
+        },
+        {
+            "name": "user_oauth",
+            "description": "OAuth integrations for users"
+        },
+        {
+            "name": "access_rights",
+            "description": "Access rights and role management"
+        },
+        {
+            "name": "company_functions",
+            "description": "Functions and roles in a company"
+        },
+        {
+            "name": "images",
+            "description": "General image management"
+        },
+        {
+            "name": "licence_modes",
+            "description": "Modes of licences (subscription, purchase, etc.)"
+        },
+        {
+            "name": "addresses",
+            "description": "Address management for users and companies"
+        },
+        {
+            "name": "licences",
+            "description": "Licence management for products"
+        },
+        {
+            "name": "user_actions",
+            "description": "Tracking user actions and logs"
+        },
+        {
+            "name": "login_history",
+            "description": "User login history tracking"
+        },
+        {
+            "name": "offer_products",
+            "description": "Products included in offers"
+        },
+        {
+            "name": "offers",
+            "description": "Operations related to offers"
+        },
+        {
+            "name": "offer_types",
+            "description": "Types of offers available"
+        },
+        {
+            "name": "permissions",
+            "description": "Permissions management"
+        },
+        {
+            "name": "product_configurations",
+            "description": "Configurations for products"
+        },
+        {
+            "name": "product_images",
+            "description": "Images associated with products"
+        },
+        {
+            "name": "offers",
+            "description": "Operations related to products"
+        },
+        {
+            "name": "image_types",
+            "description": "Types of images (e.g., icons, thumbnails)"
+        },
+        {
+            "name": "user_sessions",
+            "description": "Gestion des sessions utilisateur"
+        }
+    ],
+    "responses": {
+        "ParseError": {
+            "description": "When a mask can't be parsed"
+        },
+        "MaskError": {
+            "description": "When any error occurs on mask"
+        }
+    }
+}

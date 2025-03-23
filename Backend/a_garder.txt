@@ -1,0 +1,55 @@
+
+@app.before_first_request
+def initialize_database():
+    """
+    Crée les tables dans la base de données si elles n'existent pas encore.
+    Ne touche pas aux tables existantes.
+    """
+    db.create_all()
+
+
+with app.app_context():
+    def initialize_database():
+        """
+        Crée les tables dans la base de données si elles n'existent pas encore.
+        Ne touche pas aux tables existantes.
+        """
+        db.create_all()
+
+from flask import Flask, render_template
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+from models import db
+
+# Initialiser l'application Flask
+app = Flask(__name__)
+
+# Configuration de la base de données
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///my_database.db'  # Exemple avec SQLite
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+
+db.init_app(app)
+
+# Configuration des migrations (si nécessaire)
+migrate = Migrate(app, db)
+
+
+# Fonction pour initialiser la base de données
+#def initialize_database():
+    #with app.app_context():  # Création d'un contexte d'application
+        #db.create_all()  # Crée les tables si elles n'existent pas
+
+# Appeler la fonction pour créer la base de données au démarrage
+#initialize_database()
+
+
+
+# Définir une route de base
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+# Point d'entrée de l'application
+if __name__ == "__main__":
+    app.run(debug=True)
